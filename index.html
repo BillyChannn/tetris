@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tetris 俄罗斯方块</title>
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="icon" href="favsion.ico">
+</head>
+<body>
+  
+  <div id="gameBoy">  
+    <div id="screen">
+      <div id="gameArea"></div>
+      <div id="aside">  
+        <div>Time<p id="time">0s</p></div>
+        <div>Point<p id="score">0</p></div>
+        <div>Cleans<p id="lines">0</p></div>
+        <div>Next<div id="nextArea"></div></div>
+      </div>
+    </div>
+    <div id="control">
+      <button id="btnStart">Start</button>
+      <button id="btnPause">Pause</button>
+      <button id="btnReset">Reset</button>
+    </div>
+  </div>
+  
+  <script src="js/BlocksFactory.js"></script>
+  <script src="js/Game.js"></script>
+  <script src="js/entry.js"></script>
+</body>
+</html>

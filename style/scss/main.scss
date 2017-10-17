@@ -1,0 +1,139 @@
+/* reset */
+@mixin margin-padding-reset {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, ul, li {
+  @include margin-padding-reset;
+  overflow: hidden;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+/* gameBoy */
+#gameBoy {
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+  border-radius: 40px;
+  box-shadow: 0 0 5px #ccc;
+  background-color: #efcc19;
+}
+
+
+/* screen */
+#screen {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #7b7458;
+  outline: 5px inset #eed66a;
+  background-color: #9ead86;
+}
+
+
+/* game-area */
+#gameArea {
+  position: relative;
+  margin: 10px;
+  border: 2px solid #000;
+  width: 300px;
+  height: 600px;
+}
+
+
+/* next-area */
+#nextArea {
+  position: relative;
+  margin: 20px auto;
+  width: 120px;
+  height: 120px;
+}
+
+
+/* aside */
+
+#aside {
+  position: relative;
+  margin: 10px;
+  width: 150px;
+  font: bold 28px/40px Comic Sans MS;
+
+  p {
+    margin: 5px;
+    text-align: right;
+  }
+}
+
+/* button */
+button {
+  margin: 20px 10px;
+  width: 60px;
+  height: 60px;
+  border-width: 0;
+  border-radius: 50%;
+  font: bold 16px Comic Sans MS; 
+  outline: none;
+  cursor: pointer;
+}
+
+#btnStart {
+  background-color: #0ec400;  
+}
+
+#btnPause {
+  background-color: #0ec400;   
+}
+
+#btnReset {
+  background-color: #dd1d1d;
+}
+
+/* blocks */
+.none, .done, .current {
+  position: absolute;
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;  
+}
+
+.none {
+  margin: 2px;
+  padding: 2.5px;
+  border: 2.5px solid rgba(1, 1, 1, 0.15);
+  background-color: rgba(1, 1, 1, 0.15);
+  background-clip: content-box;
+}
+
+.current {
+  margin: 2px;
+  padding: 2.5px;
+  border: 2.5px solid rgba(1, 1, 1, 1);
+  background-color: rgba(1, 1, 1, 1);
+  background-clip: content-box;
+}
+
+.done {
+  margin: 2px;
+  padding: 2.5px;
+  border: 2.5px solid rgba(20, 20, 20, 1);
+  background-color: rgba(20, 20, 20, 1);
+  background-clip: content-box;
+}
