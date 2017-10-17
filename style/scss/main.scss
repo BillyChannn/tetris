@@ -27,6 +27,7 @@ ul {
 #gameBoy {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0 150px;
   border-radius: 40px;
   box-shadow: 0 0 5px #ccc;
@@ -40,9 +41,6 @@ ul {
   display: flex;
   flex-direction: row;
   align-content: center;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
   border: 2px solid #7b7458;
   outline: 5px inset #eed66a;
   background-color: #9ead86;
@@ -84,7 +82,7 @@ ul {
 
 /* button */
 button {
-  margin: 20px 10px;
+  margin: 10px 10px;
   width: 60px;
   height: 60px;
   border-width: 0;
