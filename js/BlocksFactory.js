@@ -298,7 +298,7 @@ function BlocksFactory() {
 
   this.makeBlock = function(offestY) {
     var b;
-    var index = Math.round(Math.random() * 6 + 1);
+    var index = Math.ceil(Math.random() * 7);
     switch (index) {
       case 1:
         b = new Block1();
